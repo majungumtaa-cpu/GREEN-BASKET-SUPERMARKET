@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/config.php';$st=$pdo->prepare("INSERT INTO messages(name,email,message) VALUES(?,?,?)");$st->execute([$_POST['name'],$_POST['email'],$_POST['message']]);header('Location: contact.php');exit;?>

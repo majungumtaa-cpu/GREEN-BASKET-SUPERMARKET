@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/config.php'; if(!empty($_POST['email'])){$st=$pdo->prepare("INSERT IGNORE INTO subscribers(email) VALUES(?)");$st->execute([$_POST['email']]);} header('Location: index.php');exit; ?>

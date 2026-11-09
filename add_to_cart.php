@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/config.php'; $id=(int)($_POST['id']??0); if($id>0){$_SESSION['cart'][$id]=($_SESSION['cart'][$id]??0)+1;} header('Location: '.($_SERVER['HTTP_REFERER']??'shop.php')); exit; ?>
